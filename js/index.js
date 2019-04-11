@@ -51,6 +51,11 @@ navContent.pop();
 // navLinkValues.forEach((value, index) => {
 //   navLinks[index].innerText = value;
 // });
+
+/////////////////////   Another forEach solution ///////////////
+// let menu_items = document.querySelectorAll('a')
+// menu_items.forEach((element, index)=>{element.innerHTML = siteContent['nav'][`nav-item-${index++}`]})
+
 let counter = 0;
 for(let i = 0; i < navContent.length; i++){
   navItem[counter].textContent = navContent[i];
