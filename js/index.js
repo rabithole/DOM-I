@@ -84,3 +84,17 @@ secondP.textContent = 'About content elementum magna eros, ac posuere elvit temp
 
 let middleImage = document.querySelector('.middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
+
+let bottomContentH4_1 = document.querySelector('.bottom-content div:nth-child(1) h4')
+bottomContentH4_1.textContent = 'SERVICES';
+
+let bottomContentH4_2 = document.querySelector('.bottom-content div:nth-child(2) h4')
+bottomContentH4_2.textContent = 'PRODUCT';
+
+let bottomContentH4_3 = document.querySelector('.bottom-content div:nth-child(3) h4')
+bottomContentH4_3.textContent = 'VISON';
+
+
+
+// console.log(bottomContent)
+
