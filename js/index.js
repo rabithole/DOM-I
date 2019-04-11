@@ -47,7 +47,10 @@ let navItem = document.querySelectorAll('a');
 console.log(navItem)
 let navContent = Object.values(siteContent.nav)
 navContent.pop();
-// Learn to do this with forEach...
+//////////////////// Learn to do this with forEach... //////////////////
+// navLinkValues.forEach((value, index) => {
+//   navLinks[index].innerText = value;
+// });
 let counter = 0;
 for(let i = 0; i < navContent.length; i++){
   navItem[counter].textContent = navContent[i];
