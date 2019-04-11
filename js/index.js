@@ -94,7 +94,31 @@ bottomContentH4_2.textContent = 'PRODUCT';
 let bottomContentH4_3 = document.querySelector('.bottom-content div:nth-child(3) h4')
 bottomContentH4_3.textContent = 'VISON';
 
+let bottomContentP_1 = document.querySelector('.bottom-content div:nth-child(1) p')
+bottomContentP_1.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
+let bottomContentP_2 = document.querySelector('.bottom-content div:nth-child(2) p')
+bottomContentP_2.textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-// console.log(bottomContent)
+let bottomContentP_3 = document.querySelector('.bottom-content div:nth-child(3) p')
+bottomContentP_3.textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+let contactH4 = document.querySelector('.contact h4')
+contactH4.textContent = 'contact';
+
+let contactP_2 = document.querySelector('.contact p:nth-child(2)')
+contactP_2.innerHTML = '123 Way 456 Street <br> Somewhere, USA';
+
+let contactP_3 = document.querySelector('.contact p:nth-child(3)')
+contactP_3.innerHTML = '1 (888) 888-8888';
+
+let contactP_4 = document.querySelector('.contact p:nth-child(4)')
+contactP_4.innerHTML = 'sales@greatidea.io';
+
+let footerP = document.querySelector('footer p')
+footerP.textContent = 'Copyright Great Idea! 2018'
+
+// body > div > section.contact > p:nth-child(2)
+
+console.log(contactP_1)
 
