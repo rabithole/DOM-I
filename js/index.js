@@ -42,12 +42,18 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navItem = document.querySelectorAll('a');
-// navItem.setAttribute('src', siteContent['nav']['nav-item-1'])
-navItem[0].textContent = siteContent["nav"]["nav-item-1"]
-// siteContent.forEach(item => {
-//   navItem.textContent = siteContent["nav"]["nav-item-1"]
-// })
+let navContent = Object.values(siteContent.nav)
+navContent.pop();
+// Learn to do this with forEach...
+let counter = 0;
+for(let i = 0; i < navContent.length; i++){
+  navItem[counter].textContent = navContent[i];
+  counter++;
+}
 
-// for(let i = 0; i < siteContent.length; i++){
+let cta = document.querySelector('#cta-img')
+cta.src = 'img/header-img.png'
 
-// }
+let ctaH1 = document.querySelector('.cta-text h1')
+ctaH1.innerHTML = 'DOM <br> IS <br> AWESOME'
+console.log(ctaH1)
