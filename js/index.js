@@ -54,6 +54,9 @@ for(let i = 0; i < navContent.length; i++){
   navItem[counter].style.color = 'green';
   counter++;
 }
+let nav = document.querySelector('nav')
+console.log(nav)
+// nav.appendChild('Whack')
 
 // Header image
 let cta = document.querySelector('#cta-img')
