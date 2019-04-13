@@ -44,7 +44,6 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Populate nav tags from siteContent object above. 
 let navItem = document.querySelectorAll('a');
-console.log(navItem)
 let navContent = Object.values(siteContent.nav)
 navContent.pop();
 //////////////////// Learn to do this with forEach... //////////////////
@@ -63,8 +62,17 @@ for(let i = 0; i < navContent.length; i++){
   counter++;
 }
 let nav = document.querySelector('nav')
-console.log(nav)
-// nav.appendChild('Whack')
+//  Create a new anchor tag with append
+const appChild = document.createElement('a');
+appChild.textContent = 'Appended';
+appChild.style.color = 'blue';
+nav.appendChild(appChild)
+
+//  Create a new anchor tag with prepend. 
+const prepChild = document.createElement('a');
+prepChild.textContent = 'Prepend';
+prepChild.style.color = 'blue';
+nav.prepend(prepChild);
 
 // Header image
 let cta = document.querySelector('#cta-img')
